@@ -24,8 +24,8 @@ jobs:
         uses: actions/checkout@v2
         if: always()
         with:
-          ref: gh-pages
-          path: gh-pages
+          ref: master
+          path: master
       - name: Build Report
         uses: simple-elf/allure-report-action@master
         if: always()
