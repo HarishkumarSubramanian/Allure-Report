@@ -36,6 +36,8 @@ jobs:
       - name: Publish Report
         if: always()
         uses: HarishkumarSubramanian/actions-gh-pages@main
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
