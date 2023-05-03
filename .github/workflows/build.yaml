@@ -35,7 +35,7 @@ jobs:
           keep_reports: 01
       - name: Publish Report
         if: always()
-        uses: peaceiris/actions-gh-pages@v2
+        uses: HarishkumarSubramanian/actions-gh-pages@main
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
